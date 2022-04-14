@@ -1,0 +1,122 @@
+.recent-posts-card {
+  width: 320px;
+  border: solid 1px #e8e8e8;
+  position: relative;
+  margin: 0 15px 20px;
+}
+
+.recent-posts-card-data {
+  position: absolute;
+  margin: 20px 0 0 20px;
+  z-index: 500;
+}
+
+.card-data-head {
+  width: 50px;
+  min-height: 35px;
+  background-color: #363636;
+  display: block;
+  border-radius: 3px 3px 0 0;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.card-data-foot {
+  width: 50px;
+  min-height: 25px;
+  background-color: #252525;
+  display: block;
+  border-radius: 0 0 3px 3px;
+  font-family: 'roboto', 'arial', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2.1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.recent-posts-photo {
+  display: block;
+  background-image: url(/src/components/Card/img/photo1.jpg);
+  width: 318px;
+  height: 220px;
+}
+
+.recent-posts-card:hover {
+  background-color: #362f2d;
+}
+
+.recent-posts-card:hover .recent-posts-photo {
+  filter: brightness(30%);
+}
+
+.recent-posts-card:hover .recent-posts-card-title {
+  color: #c7b299;
+}
+
+.recent-posts-card:hover .recent-posts-card-txt {
+  color: #fff;
+}
+
+.recent-posts-card:hover .card-data-head {
+  background-color: #c7b299;
+}
+
+.recent-posts-card:hover .card-data-foot {
+  background-color: #a48d72;
+}
+
+.recent-posts-card-title {
+  font-family: 'raleway', 'arial', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  color: #555555;
+  padding: 0px 19px;
+}
+
+.recent-posts-card-txt {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #8c8c8c;
+  padding: 19px 19px 0;
+}
+
+.recent-posts-card-a {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #c7b299;
+  text-decoration: none;
+  position: relative;
+  margin: 19px 0 19px 19px;
+  display: inline-block;
+}
+
+.recent-posts-card-a:before {
+  content: "";
+  border: 5px solid transparent;
+  border-left: 6px solid #c7b299;
+  position: absolute;
+  top: 5px;
+  left: 84px;
+}
+
+.recent-posts-card-a:hover {
+  color: #fff;
+}
+
+.recent-posts-card-a:hover:before {
+  border-left: 6px solid #fff;
+}
+

@@ -1,0 +1,40 @@
+.recent-posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recent-posts .section-title {
+  margin-bottom: 0;
+}
+
+.recent-posts .section-text {
+  max-width: 757px;
+  text-align: center;
+}
+
+.recent-posts-block-card {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.section-title {
+  font-family: 'raleway', 'arial', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: normal;
+  color: #555555;
+}
+
+.section-text {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #8c8c8c;
+  letter-spacing: -0.3px;
+  margin-top: 24px;
+  padding: 0 5px;
+}

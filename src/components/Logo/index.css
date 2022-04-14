@@ -1,0 +1,21 @@
+.logo {
+  width: 165px;
+  line-height: 51px;
+  background: url(./img/logo.png) no-repeat;
+  font-size: 27px;
+  font-weight: 400;
+  padding-left: 60px;
+  text-decoration: none;
+  color: #222222;
+}
+
+@media (max-width: 860px) {
+  .logo {
+      width: auto;
+  }
+}
+
+.logo span {
+  color: #f16d7f;
+  font-weight: 400;
+}

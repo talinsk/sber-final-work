@@ -1,0 +1,7 @@
+.personal__pic {
+  opacity: 0.5;
+}
+
+.personal__pic:hover {
+  opacity: 0.9;
+}

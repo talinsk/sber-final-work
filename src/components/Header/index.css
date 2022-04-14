@@ -1,0 +1,42 @@
+.cntr {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  
+}
+
+@media (max-width: 1170px) {
+  .cntr {
+      width: auto;
+      margin: auto;
+      padding-right: 15px;
+      padding-left: 15px;
+  }
+}
+
+.header {
+  height: 100px;
+  border-bottom: 1px solid #ececec;
+}
+
+@media (max-width: 860px) {
+  .header {
+      height: auto;
+  }
+}
+
+.headerInner {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 860px) {
+  .headerInner {
+      flex-direction: column;
+      padding: 15px;
+  }
+}
+
