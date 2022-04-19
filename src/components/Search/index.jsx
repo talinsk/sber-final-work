@@ -10,7 +10,7 @@ const Search = () => {
     <form className="searchWrap">
       <input placeholder="Search for Item..." type="text" value={val} onInput={changeText}/>
       <button className="searchWrapButton">
-          <i class="fas fa-search"></i>
+          <i className="fas fa-search"></i>
       </button>
     </form>
   )

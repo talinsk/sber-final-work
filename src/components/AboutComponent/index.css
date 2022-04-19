@@ -1,0 +1,43 @@
+.about-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-info .about-info-text {
+  max-width: 957px;
+  text-align: justify;
+}
+
+.about-info-title {
+  font-family: 'raleway', 'arial', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: normal;
+  color: #555555;
+}
+
+.about-info-text {
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: #8c8c8c;
+  letter-spacing: -0.3px;
+  margin-top: 24px;
+  padding: 0 5px;
+  line-height: 1.3em;
+}
+
+.about-photo-back {
+  height: 638px;
+  width: 100%;
+  background: url(./img/ozero-kideliu1.jpg) no-repeat center bottom, #ccc;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+@media (max-width: 1040px) {
+  .about-photo-back {
+      height: auto;
+  }
+}

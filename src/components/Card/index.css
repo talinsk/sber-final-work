@@ -14,7 +14,6 @@
 .card-data-head {
   width: 50px;
   min-height: 35px;
-  background-color: #363636;
   display: block;
   border-radius: 3px 3px 0 0;
   font-size: 24px;
@@ -27,9 +26,7 @@
 }
 
 .card-data-foot {
-  width: 50px;
   min-height: 25px;
-  background-color: #252525;
   display: block;
   border-radius: 0 0 3px 3px;
   font-family: 'roboto', 'arial', sans-serif;
@@ -63,14 +60,6 @@
 
 .recent-posts-card:hover .recent-posts-card-txt {
   color: #fff;
-}
-
-.recent-posts-card:hover .card-data-head {
-  background-color: #c7b299;
-}
-
-.recent-posts-card:hover .card-data-foot {
-  background-color: #a48d72;
 }
 
 .recent-posts-card-title {
@@ -108,8 +97,8 @@
   border: 5px solid transparent;
   border-left: 6px solid #c7b299;
   position: absolute;
-  top: 5px;
-  left: 84px;
+  top: 4px;
+  left: 89px;
 }
 
 .recent-posts-card-a:hover {

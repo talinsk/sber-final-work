@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../Logo';
 import './index.css';
 import Search from '../Search';
@@ -10,6 +11,10 @@ const Header = () => {
         <div className="cntr headerInner">
             <Logo/>
             <Search/>
+            <nav>
+                <Link to="/">Главная</Link>
+                <Link to="/about">О проекте</Link>
+            </nav>
             <Personal/>
         </div>
     </header>

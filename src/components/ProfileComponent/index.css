@@ -1,0 +1,42 @@
+.checkOutWrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.infoWrap {
+  width: 355px;
+}
+
+.infoWrap div {
+  margin-bottom: 10px;
+}
+
+.infoWrap h2 {
+  margin-top: 0;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.profParam {
+  color: #b9b9b9;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.profValue {
+  color: #2f2f2f;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+.infoWrap textarea {
+  margin-top: 5px;
+  width: 344px;
+  height: 160px;
+}

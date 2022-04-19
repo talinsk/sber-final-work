@@ -5,13 +5,13 @@ const Card = () => {
   return (
         <div className="recent-posts-card">
             <div className="recent-posts-card-data">
-                <span className="card-data-head">30</span>
-                <span className="card-data-foot">Sep.</span>
+                <span className="card-data-head">12.04.2022</span>
+                <span className="card-data-foot">Автор поста</span>
             </div>
             <div className="recent-posts-photo"></div>
-            <h4 className="recent-posts-card-title">Lorem ipsum dolor sit amet</h4>
-            <p className="recent-posts-card-txt">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-            <a className="recent-posts-card-a" href="#">Read More</a>
+            <h4 className="recent-posts-card-title">Название поста</h4>
+            <p className="recent-posts-card-txt">Краткое описание</p>
+            <a className="recent-posts-card-a" href="#">Читать пост</a>
         </div>
   )
 }

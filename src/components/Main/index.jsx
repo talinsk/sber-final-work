@@ -7,8 +7,8 @@ const Main = () => {
   return (
     <main>
       <section className="recent-posts">
-        <h3 className="section-title">Recent Posts.</h3>
-        <p className="section-text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+        <h3 className="section-title">Путешествия по Горному Алтаю</h3>
+        <p className="section-text">Лучший отдых - активный отдых, лучший активный отдых - в горах, лучшие горы - Алтай!</p>
         <div className="recent-posts-block-card">
             {data.map(el => <Card text={el.name} key={el.id} pic={el.picture} price={el.price}/>)}
         </div>
