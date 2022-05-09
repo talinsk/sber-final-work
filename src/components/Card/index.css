@@ -41,9 +41,11 @@
 
 .recent-posts-photo {
   display: block;
-  background-image: url(/src/components/Card/img/photo1.jpg);
+  background-color: #fff;
   width: 318px;
   height: 220px;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .recent-posts-card:hover {
