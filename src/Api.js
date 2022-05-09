@@ -83,6 +83,14 @@ class Api {
           body: JSON.stringify(body)
       }).then(responseHandler);
   }
+
+  getUserInfo() {
+    return fetch(`${this.path}/users/me`, {
+      headers: {
+        "authorization": `Bearer ${this.token}`
+      }
+    }).then(responseHandler);
+  }
 }
 
 const config = {
