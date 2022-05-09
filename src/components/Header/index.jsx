@@ -5,12 +5,12 @@ import './index.css';
 import Search from '../Search';
 import Personal from '../Personal';
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header className="header">
         <div className="cntr headerInner">
             <Logo/>
-            <Search/>
+            <Search {...props} />
             <nav>
                 <Link to="/">Главная</Link>
                 <Link to="/about">О проекте</Link>

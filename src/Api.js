@@ -16,6 +16,14 @@ class Api {
     }).then(responseHandler);
   }
 
+  filterPosts(filter) {
+    return fetch(`${this.path}/posts/search/?query=${filter}`, {
+      headers: {
+        "authorization": `Bearer ${this.token}`
+      }
+    }).then(responseHandler);
+  }
+
   getPost(id) {
     return fetch(`${this.path}/posts/${id}`, {
       headers: {
@@ -24,17 +32,32 @@ class Api {
     }).then(responseHandler);
   }
 
-  getSingleProduct(id) {
-    return fetch(`${this.path}/products/${id}`, {
+
+  createPost(post) {
+    return fetch(`${this.path}/posts`, {
+      method: "post",
       headers: {
-        "authorization": `Bearer ${this.token}`
-      }
+        "authorization": `Bearer ${this.token}`,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(post)
     }).then(responseHandler);
   }
 
-  setProductLike(id, isLike) {
-    return fetch(`${this.path}/products/likes/${id}`, {
-      method: isLike ? "delete" : "put",
+  updatePost(post) {
+    return fetch(`${this.path}/posts/${post._id}`, {
+      method: "PATCH",
+      headers: {
+        "authorization": `Bearer ${this.token}`,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(post)
+    }).then(responseHandler);
+  }
+
+  deletePost(id) {
+    return fetch(`${this.path}/posts/${id}`, {
+      method: "DELETE",
       headers: {
         "authorization": `Bearer ${this.token}`
       }

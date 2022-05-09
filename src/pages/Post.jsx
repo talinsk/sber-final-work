@@ -1,10 +1,14 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useContext} from "react";
 import {useParams} from "react-router-dom";
 import api from "../Api";
 import PostComponent from "../components/Post"
+import { UserCtx } from "../context/UserContext";
+import { Link, useNavigate } from "react-router-dom";
 
 const Post = () => {
   let { id } = useParams();
+  const { user } = useContext(UserCtx);
+  const navigation = useNavigate();
 
   const [post, setPost] = useState();
 
@@ -22,10 +26,32 @@ const Post = () => {
     });
   }, []);
 
+  const deletePost = () => {
+    api.deletePost(post._id).then(data => {
+      navigation("/");
+    });
+  }
+
+  
+  const RenderButtons = () => {
+    if (user && post && post.author._id == user) {
+      return <>
+        <Link to={`/edit-post/${post._id}`}>
+          <button type="button">Edit</button>
+        </Link>
+        <button onClick={deletePost}>Delete</button>
+      </>
+    }
+
+    return null;
+  }
 
   return (
     <>
       <PostComponent post={post}/>
+      <div>
+        {RenderButtons()}
+      </div>
     </>
   )
 }
