@@ -31,9 +31,6 @@ const Main = ({posts}) => {
             <Card post={el} key={el._id}/>
           ))}
         </div>
-        {/*<div className="recent-posts-block-card">
-            {data.map(el => <Card text={el.name} key={el.id} pic={el.picture} price={el.price}/>)}
-        </div>*/}
       </section>
     </main>
   )

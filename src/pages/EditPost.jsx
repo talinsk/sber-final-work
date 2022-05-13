@@ -24,7 +24,6 @@ const Post = () => {
       api.getPost(id).then(data => {
         if (data) {
           setPost(data);
-          console.log(data);
         }
       });
     }

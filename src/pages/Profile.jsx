@@ -11,11 +11,9 @@ const Profile = () => {
     if (token) {
       api.token = token;
       api.getUserInfo().then(data => {
-        console.log(data);
         setUser(data);
       });
     }
-    
   }, []);
 
   return (

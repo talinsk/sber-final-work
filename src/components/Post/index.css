@@ -10,6 +10,12 @@
   max-width: 505px;
 }
 
+@media (max-width: 470px) {
+  .photoContainer img {
+      max-width: 350px;
+  }
+}
+
 .infoWrapPost {
   width: 555px;
 }

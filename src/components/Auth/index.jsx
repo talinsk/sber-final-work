@@ -13,7 +13,6 @@ export default ({login}) => {
         e.preventDefault();
         if (login) {
             api.login({email: userName, password: pwd}).then(ans => {
-                console.log(ans);
                 if (ans.data) {
                     setUser(ans.data._id);
                     setToken(ans.token);
@@ -21,12 +20,8 @@ export default ({login}) => {
                 navigation("/");
             })
         } else {
-            console.log(userName);
             api.signup({email: userName, password: pwd}).then(ans => {
-                // console.log(ans);
-                // if (ans._id || ans.err.statusCode === 409) {
-                    navigation("/signin");
-                // }
+                navigation("/signin");
             })
         }
     }

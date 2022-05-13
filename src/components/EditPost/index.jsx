@@ -17,9 +17,6 @@ const Post = ({post}) => {
 
   const handler = (e) => {
     e.preventDefault();
-
-    console.log(title, text, image);
-
     let token = localStorage.getItem("token");
     if (token) {
         api.token = token;
@@ -29,13 +26,11 @@ const Post = ({post}) => {
     
     if (!post._id) {
       api.createPost(newPost).then(data => {
-        console.log(data);
         navigation(`/post/${data._id}`);
       });
     }
     else {
       api.updatePost(newPost).then(data => {
-        console.log(data);
         navigation(`/post/${data._id}`);
       });
     }

@@ -19,7 +19,6 @@ const Post = () => {
     }
     
     api.getPost(id).then(data => {
-      console.log(data);
       if (data) {
         setPost(data);
       }
@@ -32,7 +31,6 @@ const Post = () => {
     });
   }
 
-  
   const RenderButtons = () => {
     if (user && post && post.author._id == user) {
       return <>

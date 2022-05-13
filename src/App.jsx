@@ -54,9 +54,6 @@ const App = () => {
             <Route path="/signup" element={<Signup/>}/>
           </Routes>
         </div>
-        {/*<Card/>*/}
-        {/*dataCards*/}
-        {/*<Main/>*/}
         <Footer/>
       </div>
     </UserCtx.Provider>

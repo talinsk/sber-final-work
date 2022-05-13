@@ -3,7 +3,6 @@ import './index.css';
 
 
 const Post = ({post}) => {
-  console.log(post);
   if (!post) {
     return (
       <>
