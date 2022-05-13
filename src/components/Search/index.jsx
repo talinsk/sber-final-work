@@ -8,7 +8,7 @@ const Search = ({initSearchText, searchCallback}) => {
   }
   return (
     <form className="searchWrap">
-      <input placeholder="Search for Item..." type="text" value={val} onInput={changeText}/>
+      <input placeholder="Введите слово для поиска" type="text" value={val} onInput={changeText}/>
       <button className="searchWrapButton" onClick={() => searchCallback(val)} type="button">
           <i className="fas fa-search"></i>
       </button>

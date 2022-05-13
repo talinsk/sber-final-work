@@ -45,6 +45,14 @@ nav {
   gap: 20px;
 }
 
+.headerNav {
+  opacity: 0.5;
+}
+
+.headerNav:hover {
+  opacity: 1;
+}
+
 a {
   color: inherit;
   text-decoration: none;

@@ -36,10 +36,12 @@ const Post = () => {
   const RenderButtons = () => {
     if (user && post && post.author._id == user) {
       return <>
-        <Link to={`/edit-post/${post._id}`}>
-          <button type="button">Edit</button>
-        </Link>
-        <button onClick={deletePost}>Delete</button>
+        <div className="buttonWrap">
+          <Link to={`/edit-post/${post._id}`}>
+            <i className="fas fa-pencil-alt" title="Редактировать пост"></i>
+          </Link>
+          <i className="fas fa-trash-alt" onClick={deletePost} title="Удалить пост"></i>
+        </div>
       </>
     }
 
@@ -48,10 +50,10 @@ const Post = () => {
 
   return (
     <>
-      <PostComponent post={post}/>
       <div>
         {RenderButtons()}
       </div>
+      <PostComponent post={post}/>
     </>
   )
 }

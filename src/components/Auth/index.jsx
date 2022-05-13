@@ -31,15 +31,18 @@ export default ({login}) => {
         }
     }
     return (
-        <div>
-            <form className="auth" onSubmit={handler}>
-                <h1>{login ? "Вход" : "Регистрация"}</h1>
+        <div className="cntr checkOutWrap">
+            <form className="infoWrap" onSubmit={handler}>
+                <h2>{login ? "Вход" : "Регистрация"}</h2>
                 <input type="email" placeholder="email" name="email" value={userName} required onInput={e => setUserName(e.target.value)}/>
                 <input type="password" placeholder="password" name="password" value={pwd} required onInput={e => setPwd(e.target.value)}/>
-                <button type="submit">{login ? "Войти" : "Зарегистрироваться"}</button>
-                <Link to={login ? "/signup" : "/signin"}>
+                <div className="infoWrapButton">
+                  <button type="submit">{login ? "Войти" : "Зарегистрироваться"}</button>
+                  <Link to={login ? "/signup" : "/signin"}>
                     <button type="button">{login ? "Регистрация" : "Вход"}</button>
-                </Link>
+                  </Link>
+                </div>
+
             </form>
         </div>
     )

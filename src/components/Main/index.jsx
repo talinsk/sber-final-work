@@ -11,7 +11,7 @@ const Main = ({posts}) => {
 
   const AddPostButton = () => {
     if (user) {
-      return <button onClick={() => navigation("/edit-post/")}>Add post</button>;
+      return <button onClick={() => navigation("/edit-post/")} className="recent-posts-add-button">Создать пост</button>;
     }
     else {
       return null;
@@ -22,8 +22,10 @@ const Main = ({posts}) => {
     <main>
       <section className="recent-posts">
         <h3 className="section-title">Путешествия по Горному Алтаю</h3>
-        <AddPostButton/>
         <p className="section-text">Лучший отдых - активный отдых, лучший активный отдых - в горах, лучшие горы - Алтай!</p>
+        <div>
+          <AddPostButton/>
+        </div>
         <div className="recent-posts-block-card">
           {posts.map(el => (
             <Card post={el} key={el._id}/>

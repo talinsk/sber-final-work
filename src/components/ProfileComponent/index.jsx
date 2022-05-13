@@ -9,20 +9,20 @@ const ProfileComponent = ({user}) => {
     }
 
     return <>
-      <div className="checkOutWrap">
-      <div className="infoWrap">
+      <div className="checkOutWrapProfile">
+      <div className="profinfoWrap">
           <h2 className="profName">Профиль</h2>
           <div>
               <span className="profParam">EMAIL:</span>
               <span className="profValue">{user.email}</span>
           </div>
           <div>
-              <span className="profParam">Дата рождения:</span>
-              <span className="profValue">01.01.1985</span>
+              <span className="profParam">ИМЯ:</span>
+              <span className="profValue">{user.name}</span>
           </div>
           <div>
-              <span className="profParam">Город:</span>
-              <span className="profValue">Новосибирск</span>
+              <span className="profParam">ОБО МНЕ:</span>
+              <span className="profValue">{user.about}</span>
           </div>
       </div>
       </div>

@@ -3,53 +3,50 @@
   border: solid 1px #e8e8e8;
   position: relative;
   margin: 0 15px 20px;
-}
-
-.recent-posts-card-data {
-  position: absolute;
-  margin: 20px 0 0 20px;
-  z-index: 500;
+  border-radius: 5px;
 }
 
 .card-data-head {
-  width: 50px;
-  min-height: 35px;
   display: block;
-  border-radius: 3px 3px 0 0;
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 300;
   font-style: normal;
   line-height: 1.53;
   letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
+  color: #555555;
+  padding: 10px 19px 0;
 }
 
 .card-data-foot {
-  min-height: 25px;
   display: block;
-  border-radius: 0 0 3px 3px;
-  font-family: 'roboto', 'arial', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
-  line-height: 2.1;
+  line-height: 1.6;
   letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
+  color: #555555;
+  padding: 0 19px 10px;
 }
 
 .recent-posts-photo {
   display: block;
   background-color: #fff;
   width: 318px;
-  height: 220px;
+  height: 370px;
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
+.recent-posts-card:hover .card-data-head {
+  color: #fff;
+}
+
+.recent-posts-card:hover .card-data-foot {
+  color: #fff;
+}
+
 .recent-posts-card:hover {
-  background-color: #362f2d;
+  background-color: #404040;
 }
 
 .recent-posts-card:hover .recent-posts-photo {
@@ -57,7 +54,7 @@
 }
 
 .recent-posts-card:hover .recent-posts-card-title {
-  color: #c7b299;
+  color: #fff;
 }
 
 .recent-posts-card:hover .recent-posts-card-txt {
@@ -71,6 +68,8 @@
   font-style: normal;
   color: #555555;
   padding: 0px 19px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .recent-posts-card-txt {
@@ -87,17 +86,17 @@
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
-  color: #c7b299;
+  color: #8c8c8c;
   text-decoration: none;
   position: relative;
-  margin: 19px 0 19px 19px;
+  margin: 0 0 19px 19px;
   display: inline-block;
 }
 
 .recent-posts-card-a:before {
   content: "";
   border: 5px solid transparent;
-  border-left: 6px solid #c7b299;
+  border-left: 6px solid #8c8c8c;
   position: absolute;
   top: 4px;
   left: 89px;

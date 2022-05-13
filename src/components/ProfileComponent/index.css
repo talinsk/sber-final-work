@@ -1,19 +1,19 @@
-.checkOutWrap {
+.checkOutWrapProfile {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 50px;
 }
 
-.infoWrap {
+.profinfoWrap {
   width: 355px;
 }
 
-.infoWrap div {
+.profinfoWrap div {
   margin-bottom: 10px;
 }
 
-.infoWrap h2 {
+.profinfoWrap h2 {
   margin-top: 0;
   margin-bottom: 22px;
   text-transform: uppercase;

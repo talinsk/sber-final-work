@@ -8,7 +8,8 @@ const Personal = () => {
   const navigate = useNavigate();
   const {user, setToken, setUser} = useContext(UserCtx);
 
-  const signout = () => {
+  const signout = (e) => {
+    e.preventDefault();
     setToken("");
     setUser("");
     navigate("/");
@@ -19,14 +20,16 @@ const Personal = () => {
     {
       user ? 
       <>
-      <Link to="/profile" className="personal">
-        <img src={personal} alt="Login" className="personal__pic"/>
-      </Link>
-      <button type="button" onClick={signout}>signout</button>
+      <div className="personal">
+        <Link to="/profile">
+          <img src={personal} alt="Login" className="personal__el"/>
+        </Link>
+        <a href='#' onClick={signout} className="personal__el">Выход</a>
+        </div>
       </>
       : 
-      <Link to="/signin">
-        signin
+      <Link to="/signin" className="personal__el">
+        Вход
       </Link>
     }
     </>

@@ -1,0 +1,68 @@
+.checkOutWrapPost {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.photoContainer img {
+  max-width: 505px;
+}
+
+.infoWrapPost {
+  width: 555px;
+}
+
+.infoWrapPost div {
+  margin-bottom: 10px;
+}
+
+.infoWrapPost h2 {
+  margin-top: 0;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.photoWrap {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.infoWrapParam {
+  color: #b9b9b9;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.infoWrapValue {
+  color: #2f2f2f;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 2px;
+  line-height: 1.6em;
+  white-space: pre-line;
+}
+
+.buttonWrap {
+  display:flex;
+  justify-content:end;
+  font-size: 26px;
+  padding-top: 20px;
+  padding-right: 30px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttonWrap .fas {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #999;
+}
+
+.buttonWrap .fas:hover {
+  color: #333;
+}

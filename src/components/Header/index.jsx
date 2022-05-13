@@ -12,8 +12,8 @@ const Header = (props) => {
             <Logo/>
             <Search {...props} />
             <nav>
-                <Link to="/">Главная</Link>
-                <Link to="/about">О проекте</Link>
+                <Link to="/" className="headerNav">Главная</Link>
+                <Link to="/about" className="headerNav">О проекте</Link>
             </nav>
             <Personal/>
         </div>

@@ -1,7 +1,14 @@
-.personal__pic {
-  opacity: 0.5;
+.personal {
+  height: inherit;
+  display: flex;
+  align-items: center;
 }
 
-.personal__pic:hover {
+.personal__el {
+  opacity: 0.5;
+  margin-right: 10px;
+}
+
+.personal__el:hover {
   opacity: 0.9;
 }

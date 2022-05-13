@@ -44,15 +44,15 @@ const Post = ({post}) => {
 
   return (
     <>
-      <h3>{post && post._id ? 'Редактирование' : 'Создание'} поста</h3>
-
-      <form className="auth" onSubmit={handler}>
-          <input type="text" placeholder="Заголовок поста" value={title} required onInput={e => setTitle(e.target.value)}/>
-          <input type="text" placeholder="Изображение" value={image} required onInput={e => setImage(e.target.value)}/>
-          <textarea placeholder="Текст поста" value={text} required onInput={e => setText(e.target.value)}/>
-          <button type="submit">Сохранить</button>
-      </form>
-
+      <div className="cntr checkOutWrap">
+          <form className="infoWrap" onSubmit={handler}>
+            <h2>{post && post._id ? 'Редактирование' : 'Создание'} поста</h2>
+              <input type="text" placeholder="Заголовок поста" value={title} required onInput={e => setTitle(e.target.value)}/>
+              <input type="text" placeholder="Изображение" value={image} required onInput={e => setImage(e.target.value)}/>
+              <textarea placeholder="Текст поста" value={text} required onInput={e => setText(e.target.value)}/>
+              <button type="submit">Сохранить</button>
+          </form>
+      </div>
     </>
   )
 }
