@@ -3,6 +3,7 @@ import './index.css';
 import Card from '../Card';
 import { UserCtx } from "../../context/UserContext";
 import { useNavigate } from "react-router-dom";
+import { AUTHOR_ID } from "../../consts";
 
 
 const Main = ({posts}) => {
@@ -10,7 +11,7 @@ const Main = ({posts}) => {
   const navigation = useNavigate();
 
   const AddPostButton = () => {
-    if (user) {
+    if (user && user === AUTHOR_ID) {
       return <button onClick={() => navigation("/edit-post/")} className="recent-posts-add-button">Создать пост</button>;
     }
     else {
